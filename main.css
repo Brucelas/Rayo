@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;;
+}
+p,a,li,td,input,label{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+:root {
+    --bg-body : #8B0304;
+    --primary-color : #FFEA71;
+    --fontSize-title : 40px;
+    --fontSize-parrafos : 18px;
+}
+nav.bg-rayo{
+    background: var(--bg-body); 
+}
+nav.bg-rayo ul li a{
+    color:white;
+    position: relative;
+    font-size: 18px;
+}
+nav.bg-rayo ul li a::after{
+    width: 20%;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+nav.bg-rayo ul li a:hover{
+    color: #FFEA71;
+}
+nav.bg-rayo ul li a:hover::after{
+    background: var(--primary-color);
+    width: 40%;
+}
+nav.bg-rayo ul li{
+    margin: 0 12px;
+}
+nav.bg-rayo ul li.login{
+    margin-left: 800px;
+    margin-right: 5px;
+}
+nav.bg-rayo ul li.register a{
+    display: block;
+    padding: 12px 40px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    color: white;
+    background: #e4c413;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+#carouselHeroCaptions .carousel-item .carousel-caption{
+    bottom: 44%;
+    background: rgba(0, 0, 0, 0.534);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#carouselHeroCaptions .carousel-item .carousel-caption h5{
+    font-size: 40px;
+    color: white;
+}
+nav.bg-rayo ul li.active{
+    color: rgb(214, 214, 214);
+}
+body{
+    background-color: #dad2aa;
+}
+#Hero2{
+    padding: 100px 0;
+}
+#repa2{
+    background-color: #beb899;
+}
